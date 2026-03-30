@@ -1,0 +1,30 @@
+<h2>Task List</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{task.id}}</td>
+      <td>{{task.title}}</td>
+      <td>{{task.description}}</td>
+      <td>{{task.isCompleted ? 'Completed' : 'Pending'}}</td>
+      <td>
+        <button (click)="deleteTask(task.id)">Delete</button>
+        <button (click)="editTask(task)">Edit</button>
+      </td>
+      <td>
+  <span *ngIf="task.isCompleted">Completed</span>
+  <span *ngIf="!task.isCompleted">Pending</span>
+</td>
+    </tr>
+  </tbody>
+</table>

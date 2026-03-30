@@ -1,0 +1,28 @@
+<h2>Add Task</h2>
+
+<form (ngSubmit)="addTask()">
+
+  <label>Title</label>
+  <br>
+  <input type="text" [(ngModel)]="task.title" name="title" required>
+  <br><br>
+
+  <label>Description</label>
+  <br>
+  <input type="text" [(ngModel)]="task.description" name="description">
+  <br><br>
+
+  <label>Status</label>
+  <br>
+  <select [(ngModel)]="task.isCompleted" name="isCompleted">
+    <option [value]="false">Pending</option>
+    <option [value]="true">Completed</option>
+  </select>
+
+  <br><br>
+
+  <button type="submit">
+  {{ isEdit ? 'Update Task' : 'Add Task' }}
+</button>
+
+</form>
