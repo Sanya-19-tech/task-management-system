@@ -42,9 +42,9 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 You need to have the following installed on your machine:
-- [.NET SDK](https://dotnet.microsoft.com/download) (Version required by your project)
-- [Node.js and npm](https://nodejs.org/) (For running the Angular frontend)
-- [Angular CLI](https://angular.io/cli) (Optional, but recommended for development)
+- [.NET SDK](https://dotnet.microsoft.com/download) 
+- [Node.js and npm](https://nodejs.org/) 
+- [Angular CLI](https://angular.io/cli) 
 
 ### Setting up the Backend (API)
 
